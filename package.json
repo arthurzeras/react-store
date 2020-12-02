@@ -2,6 +2,13 @@
   "name": "react-store",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "PORT=3008 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/*.{js,css}\""
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -11,18 +18,12 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
-  "scripts": {
-    "start": "PORT=3008 react-scripts start --port 3008",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --write \"src/*.{js,css}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.1"
   },
   "browserslist": {
     "production": [
@@ -35,12 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.2.1"
   }
 }
