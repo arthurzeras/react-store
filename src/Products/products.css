@@ -25,11 +25,6 @@
   margin-bottom: 20px;
 }
 
-.products__list--item:nth-child(5n+1):nth-last-child(-n+5),
-.products__list--item:nth-child(5n+1):nth-last-child(-n+5) ~ .products__list--item {
-  margin-bottom: 0;
-}
-
 @media (max-width: 970px) {
   .products {
     width: 90%;
@@ -38,11 +33,6 @@
   .products__list--item {
     flex: 0 0 25%;
     max-width: 25%;
-  }
-
-  .products__list--item:nth-child(2n+1):nth-last-child(-n+2),
-  .products__list--item:nth-child(2n+1):nth-last-child(-n+2) ~ .products__list--item {
-    margin-bottom: 0;
   }
 }
 
@@ -54,10 +44,5 @@
   .products__list--item {
     flex: 0 0 50%;
     max-width: 50%;
-  }
-
-  .products__list--item:nth-child(2n+1):nth-last-child(-n+2),
-  .products__list--item:nth-child(2n+1):nth-last-child(-n+2) ~ .products__list--item {
-    margin-bottom: 0;
   }
 }
