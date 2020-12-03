@@ -1,4 +1,4 @@
-import './app.css';
+import './products.css';
 import http from '../http';
 import { useEffect, useState } from 'react';
 import Product from '../components/Product';
@@ -21,11 +21,15 @@ export default function Products() {
 
   return (
     <div className="products">
-      <h1>Produtos</h1>
+      <h1 className="products__title">Produtos</h1>
 
-      {products.map((product) => (
-        <Product key={product.id} product={product} />
-      ))}
+      <section className="products__list">
+        {products.map((product) => (
+          <div className="products__list--item" key={product.id}>
+            <Product product={product} />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.products {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.products__title {
+  margin-bottom: 3rem;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.products__list--item {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.products__list--item:nth-child(5n+1):nth-last-child(-n+5),
+.products__list--item:nth-child(5n+1):nth-last-child(-n+5) ~ .products__list--item {
+  margin-bottom: 0;
+}
