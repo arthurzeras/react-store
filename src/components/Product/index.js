@@ -53,16 +53,16 @@ export default function Product({ product }) {
     return <span className="product__tag">{product.tag.label}</span>;
   };
 
-  const includeOfferClass = (offer) => {
+  const includeOfferClass = () => {
     const defaultClassName = 'product';
 
-    if (!offer) return defaultClassName;
+    if (!product.offer) return defaultClassName;
 
     return `${defaultClassName} product-in-offer`;
   };
 
   return (
-    <div className={includeOfferClass(product.offer)} title={product.name}>
+    <div className={includeOfferClass()} title={product.name}>
       {renderTag()}
 
       <img
