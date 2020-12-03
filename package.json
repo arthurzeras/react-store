@@ -2,6 +2,7 @@
   "name": "react-store",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/react-store",
   "scripts": {
     "start": "PORT=3008 react-scripts start",
     "build": "react-scripts build",
