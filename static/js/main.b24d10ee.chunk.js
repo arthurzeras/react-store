@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-store"]=this["webpackJsonpreact-store"]||[]).push([[0],{11:function(e,t,c){"use strict";c.r(t);var n=c(0);c(6),c(7);var r=function(){return Object(n.jsx)("div",{className:"App",children:Object(n.jsx)("h1",{children:"React Store"})})},s=c(1),o=c.n(s),i=c(3);c.n(i).a.render(Object(n.jsx)(o.a.StrictMode,{children:Object(n.jsx)(r,{})}),document.getElementById("root"))},6:function(e,t,c){},7:function(e,t,c){}},[[11,1,2]]]);
+//# sourceMappingURL=main.b24d10ee.chunk.js.map
