@@ -90,3 +90,9 @@
 .product-in-offer .product__info--price__main {
   color: var(--featured);
 }
+
+@media (max-width: 768px) {
+  .product {
+    border: 1px solid var(--neutral);
+  }
+}
